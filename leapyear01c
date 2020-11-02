@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main () {
+    int year = 0;
+
+    printf("Bitte geben Sie eine Jahreszahl ein:");
+    scanf("%d", &year);
+
+    if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+        printf("%d ist ein Schaltjahr", year);
+        return 0
+    } 
+    
+    printf("%d ist kein Schaltjahr", year);
+    return 0;
+}
